@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "title": "Откуда опенинг",
+      "questions": [
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Угадай аниме по школьной форме)",
+      "questions": [
+        {
+          "type": "image",
+          "answer": "ответ"
+        },
+        {
+          "type": "image",
+          "answer": "ответ"
+        },
+        {
+          "type": "image",
+          "answer": "ответ"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Откуда эндинг",
+      "questions": [
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        }
+      ]
+    }
+  ]
+}

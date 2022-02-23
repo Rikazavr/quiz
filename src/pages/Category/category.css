@@ -1,0 +1,23 @@
+.quiz {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.quiz__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.quiz__gif {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.quiz__start {
+  margin: 30px 0 0 30px;
+  font-size: 6em;
+}

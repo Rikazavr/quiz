@@ -1,4 +1,5 @@
 @import './reset.css';
+@import './colors.css';
 
 body {
   margin: 0;
@@ -7,4 +8,37 @@ body {
   text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0 0 30px;
+  font-size: 8em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  background: var(--red);
+  color: #000;
+}
+
+.button:hover {
+  background: var(--orange);
+}
+
+.link {
+  display: block;
+  color: #fff;
+  font-size: 4em;
+  line-height: normal;
+}
+
+.link:hover {
+  color: var(--green);
 }
