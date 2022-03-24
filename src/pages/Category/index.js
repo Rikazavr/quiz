@@ -1,20 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { observer } from 'mobx-react';
 import { useStores } from '../../hooks';
+import Question from '../../components/Question';
 import './category.css';
 
 const Category = observer(() => {
-  const {
-    quiz: { categories }
-  } = useStores();
+  const {quiz: { selectedCategory }} = useStores();
+  const questions = selectedCategory.questions;
 
   return (
-    <section className="">
-      <h1 className="title">
-        Category
-      </h1>
-    </section>
+    <main className="category">
+      <section className="category__wrapper">
+        <h1 className="title">
+          {selectedCategory.title}
+        </h1>
+
+        <Question questions={questions} />
+      </section>
+    </main>
   )
 });
 

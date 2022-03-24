@@ -1,0 +1,9 @@
+.question {
+
+}
+
+.question__id {
+  font-size: 8em;
+  text-transform: uppercase;
+  color: #fff;
+}

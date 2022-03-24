@@ -1,11 +1,15 @@
 import { makeAutoObservable } from 'mobx';
-import data from '../utils/data.json';
+import data from '../data/data.json';
 
 export class Quiz {
   constructor() {
-    this.data = data;
-    this.isComleted = false;
     this.categories = data.categories;
+    this.isComleted = false;
+    this.selectedCategory = {};
     makeAutoObservable(this);
+  }
+
+  selectCategory = category => {
+    this.selectedCategory = category;
   }
 }

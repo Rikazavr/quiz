@@ -1,12 +1,23 @@
 import React, { useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { observer } from 'mobx-react';
 import { useStores } from '../../hooks';
+import './categories.css';
 
 const Categories = observer(() => {
   const {
-    quiz: { categories }
+    quiz: {
+      categories,
+      selectCategory
+    }
   } = useStores();
+
+  const navigate = useNavigate();
+
+  const handleClick = category => {
+    selectCategory(category);
+    navigate(`/categories/${category.id}`);
+  }
 
   return (
     <main className="quiz">
@@ -15,9 +26,13 @@ const Categories = observer(() => {
           Categories
         </h1>
         {categories.map((category) =>
-          <Link to={`/categories/${category.id}`} className="link">
+          <button
+            key={category.id}
+            className="select-category"
+            onClick={()=> handleClick(category)}
+          >
             {category.title}
-          </Link>
+          </button>
         )}
       </section>
     </main>

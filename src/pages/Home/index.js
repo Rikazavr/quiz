@@ -6,11 +6,7 @@ import { useStores } from '../../hooks';
 import './home-page.css';
 import gif from './images/000.gif';
 
-const HomePage = observer(() => {
-  const {
-    quiz: { categories }
-  } = useStores();
-
+const HomePage = () => {
   return (
     <main className="quiz">
       <section className="quiz__wrapper">
@@ -29,6 +25,6 @@ const HomePage = observer(() => {
       />
     </main>
   )
-});
+};
 
 export default HomePage;

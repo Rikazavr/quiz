@@ -1,0 +1,76 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "title": "Откуда опенинг",
+      "type": "audio",
+      "questions": [
+        {
+          "type": "audio",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA",
+          "answer": "ответ 1",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA",
+          "answer": "ответ 2",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA",
+          "answer": "ответ 3",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Угадай аниме по школьной форме)",
+      "type": "image",
+      "questions": [
+        {
+          "type": "image",
+          "answer": "ответ",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA"
+        },
+        {
+          "type": "image",
+          "answer": "ответ",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA"
+        },
+        {
+          "type": "image",
+          "answer": "ответ",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Откуда эндинг",
+      "type": "audio",
+      "questions": [
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        },
+        {
+          "type": "audio",
+          "answer": "ответ",
+          "url": "https://docs.google.com/uc?export=open&id=1lXET_Lss7b-ax-8lNqu0swBrBkomJYuA",
+          "video": "https://www.youtube.com/watch?v=8QE9cmfxx4s&t=11s&ab_channel=JabneelSousa"
+        }
+      ]
+    }
+  ]
+}

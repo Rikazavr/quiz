@@ -42,3 +42,17 @@ body {
 .link:hover {
   color: var(--green);
 }
+
+.select-category {
+  padding: 0;
+  display: block;
+  color: #fff;
+  font-size: 4em;
+  line-height: normal;
+  background: none;
+  border: none;
+}
+
+.select-category:hover {
+  color: var(--green);
+}
