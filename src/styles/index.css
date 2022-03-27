@@ -15,8 +15,8 @@ body {
 }
 
 .title {
-  margin: 0 0 30px;
-  font-size: 8em;
+  /* margin: 0 0 30px; */
+  font-size: 11vw;
   text-transform: uppercase;
   color: var(--purple);
 }
@@ -26,6 +26,7 @@ body {
   padding: 20px 40px;
   background: var(--red);
   color: #000;
+  border: none;
 }
 
 .button:hover {
