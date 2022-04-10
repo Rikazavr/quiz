@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Countdown from "react-countdown";
+import './timer.css';
 
 const renderer = ({ seconds, completed }) => {
   if (completed) {
     return <p>a</p>;
   } else {
-    return <span>{seconds}</span>;
+    return (
+      <div className="timer">
+        {seconds}
+      </div>
+    );
   }
 };
 
-const Timer = ({ onFinish }) => {
+const Timer = ({ onFinish, time }) => {
   return (
     <Countdown
-      date={Date.now() + 5000}
+      date={Date.now() + time}
       renderer={renderer}
       autoStart
       onComplete={()=> onFinish()}

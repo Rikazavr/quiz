@@ -7,11 +7,18 @@
   color: #fff;
 }
 
-.start {
+.start,
+.show-answers {
   font-size: 11vw;
   background: none;
   color: #fff;
   border: none;
+  text-transform: uppercase;
+}
+
+.start:hover,
+.show-answers:hover {
+  color: var(--red);
 }
 
 .category__wrapper {

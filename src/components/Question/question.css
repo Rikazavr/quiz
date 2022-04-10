@@ -1,9 +1,21 @@
 .question {
-
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  padding: 3%;
+  /* border: 1px solid red; */
 }
 
 .question__id {
-  font-size: 8em;
-  text-transform: uppercase;
+  flex-shrink: 0;
   color: #fff;
+  font-size: 9em;
+  text-transform: uppercase;
+  /* border: 1px solid green; */
+}
+
+.question__wrapper {
+  /* border: 1px solid blue; */
+  width: 100%;
+  padding: 0 0 0 5%;
 }

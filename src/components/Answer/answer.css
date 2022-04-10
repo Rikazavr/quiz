@@ -1,0 +1,19 @@
+.answer {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  padding: 3%;
+}
+
+.answer__id {
+  flex-shrink: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 8em;
+  text-transform: uppercase;
+}
+
+.answer__wrapper {
+  width: 100%;
+  padding: 0 0 0 3%;
+}

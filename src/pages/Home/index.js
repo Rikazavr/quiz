@@ -1,8 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-import { observer } from 'mobx-react';
-import { toJS } from 'mobx';
-import { useStores } from '../../hooks';
 import './home-page.css';
 import gif from './images/000.gif';
 

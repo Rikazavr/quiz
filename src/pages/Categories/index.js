@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 import { observer } from 'mobx-react';
 import { useStores } from '../../hooks';
@@ -8,13 +8,15 @@ const Categories = observer(() => {
   const {
     quiz: {
       categories,
-      selectCategory
+      selectCategory,
+      setState
     }
   } = useStores();
 
   const navigate = useNavigate();
 
   const handleClick = category => {
+    setState('playing');
     selectCategory(category);
     navigate(`/categories/${category.id}`);
   }
@@ -31,7 +33,7 @@ const Categories = observer(() => {
             className="select-category"
             onClick={()=> handleClick(category)}
           >
-            {category.title}
+            {category.id}{'\u00A0'}{category.title}
           </button>
         )}
       </section>

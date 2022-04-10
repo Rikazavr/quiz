@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Sound from 'react-sound';
 
-const Audio = ({url}) => {
+const Audio = ({ url }) => {
   return (
     <Sound
       url={url}
