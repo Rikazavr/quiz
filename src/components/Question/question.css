@@ -3,7 +3,10 @@
   flex-grow: 1;
   display: flex;
   padding: 3%;
-  /* border: 1px solid red; */
+}
+
+.question--image .question__id {
+  margin-bottom: 30px;
 }
 
 .question__id {
@@ -11,11 +14,10 @@
   color: #fff;
   font-size: 9em;
   text-transform: uppercase;
-  /* border: 1px solid green; */
+  white-space: nowrap;
 }
 
 .question__wrapper {
-  /* border: 1px solid blue; */
   width: 100%;
   padding: 0 0 0 5%;
 }

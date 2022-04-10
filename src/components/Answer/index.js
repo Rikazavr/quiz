@@ -32,19 +32,32 @@ const Answer = observer(() => {
         <p className="answer__id">
           {`№ ${questionId + 1}`}
         </p>
-        <Timer onFinish={goToNextQuestion} key={questionId} time={10000} />
+        <Timer onFinish={goToNextQuestion} key={questionId} time={5000} />
       </div>
 
       <div className="answer__wrapper">
-        <iframe
-          width="853"
-          height="480"
-          src={`https://www.youtube.com/embed/${embedId}?autoplay=1`}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Embedded youtube"
-        />
+        {type === 'audio' ? (
+          <iframe
+            width="853"
+            height="480"
+            src={`https://www.youtube.com/embed/${embedId}?autoplay=1`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube"
+          />
+        ) : (
+          <div>
+            <h1 className="answer__text">
+              {question.answer}
+            </h1>
+            <img
+              src={question.url}
+              alt="image"
+              className="answer__image"
+            />
+          </div>
+        )}
       </div>
     </div>
   )

@@ -11,9 +11,27 @@
   color: #fff;
   font-size: 8em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .answer__wrapper {
+  position: relative;
   width: 100%;
   padding: 0 0 0 3%;
+}
+
+.answer__text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  font-size: 8vw;
+  color: var(--red);
+  text-align: right;
+}
+
+.answer__image {
+  display: block;
+  position: relative;
+  z-index: 1;
 }

@@ -16,9 +16,11 @@ const Category = observer(() => {
     }
   } = useStores();
 
+  const isMusic = selectedCategory.type === 'audio';
+
   return (
     <main className="category">
-      <h1 className="title">
+      <h1 className={`category-title ${isMusic ? 'category-title--big' : ''}`}>
         {selectedCategory.title}
       </h1>
       <section className="category__wrapper">

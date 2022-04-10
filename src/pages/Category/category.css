@@ -7,6 +7,16 @@
   color: #fff;
 }
 
+.category-title {
+  font-size: 7vw;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.category-title--big {
+  font-size: 11vw;
+}
+
 .start,
 .show-answers {
   font-size: 11vw;

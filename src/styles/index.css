@@ -15,7 +15,6 @@ body {
 }
 
 .title {
-  /* margin: 0 0 30px; */
   font-size: 11vw;
   text-transform: uppercase;
   color: var(--purple);

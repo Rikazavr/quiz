@@ -35,7 +35,13 @@ const Question = observer(() => {
     />
   );
 
-  if (type === 'image') return <AudioQuestion />;
+  if (type === 'image') return (
+    <ImageQuestion
+      id={questionId}
+      url={question.url}
+      next={goToNextQuestion}
+    />
+  );
 });
 
 const AudioQuestion = ({ id, url, next }) => {
@@ -52,6 +58,27 @@ const AudioQuestion = ({ id, url, next }) => {
           src={gif}
           alt="gif"
           className="quiz__gif"
+        />
+      </div>
+    </div>
+  )
+}
+
+const ImageQuestion = ({ id, url, next }) => {
+  return (
+    <div className="question question--image">
+      <div className="question__info">
+        <p className="question__id">
+          {`№ ${id + 1}`}
+        </p>
+        <Timer onFinish={next} key={id} time={5000} />
+      </div>
+
+      <div className="question__wrapper">
+        <img
+          src={url}
+          alt="image"
+          className=""
         />
       </div>
     </div>
