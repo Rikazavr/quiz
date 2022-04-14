@@ -32,7 +32,7 @@ const Answer = observer(() => {
         <p className="answer__id">
           {`№ ${questionId + 1}`}
         </p>
-        <Timer onFinish={goToNextQuestion} key={questionId} time={5000} />
+        <Timer onFinish={goToNextQuestion} key={questionId} time={10000} />
       </div>
 
       <div className="answer__wrapper">

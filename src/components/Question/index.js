@@ -51,7 +51,7 @@ const AudioQuestion = ({ id, url, next }) => {
         {`№ ${id + 1}`}
       </p>
       <div className="question__wrapper">
-        <Timer onFinish={next} key={id} time={5000} />
+        <Timer onFinish={next} key={id} time={10000} />
         <Audio url={url} />
 
         <img
@@ -71,7 +71,7 @@ const ImageQuestion = ({ id, url, next }) => {
         <p className="question__id">
           {`№ ${id + 1}`}
         </p>
-        <Timer onFinish={next} key={id} time={5000} />
+        <Timer onFinish={next} key={id} time={10000} />
       </div>
 
       <div className="question__wrapper">
