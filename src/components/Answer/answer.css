@@ -25,6 +25,7 @@
   right: 0;
   bottom: 0;
   z-index: 2;
+  width: 80%;
   font-size: 8vw;
   color: var(--red);
   text-align: right;
@@ -33,5 +34,8 @@
 .answer__image {
   display: block;
   position: relative;
+  /* bottom: 60px; */
   z-index: 1;
+  margin: auto 0;
+  height: 32em;
 }

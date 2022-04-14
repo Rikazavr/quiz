@@ -17,6 +17,7 @@ const Answer = observer(() => {
   const [questionId, setId] = useState(0);
   const question = questions[questionId];
   const embedId = question.videoId;
+  const seconds = (type === 'image') ? 10000 : 20000;
 
   const goToNextQuestion = () => {
     if (questionId === questions.length - 1) {
@@ -32,7 +33,7 @@ const Answer = observer(() => {
         <p className="answer__id">
           {`№ ${questionId + 1}`}
         </p>
-        <Timer onFinish={goToNextQuestion} key={questionId} time={10000} />
+        <Timer onFinish={goToNextQuestion} key={questionId} time={seconds} />
       </div>
 
       <div className="answer__wrapper">

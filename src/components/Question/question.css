@@ -12,7 +12,7 @@
 .question__id {
   flex-shrink: 0;
   color: #fff;
-  font-size: 9em;
+  font-size: 8em;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -20,4 +20,11 @@
 .question__wrapper {
   width: 100%;
   padding: 0 0 0 5%;
+  /* border: 1px solid red; */
+}
+
+.question__image {
+  display: block;
+  margin: 0 auto;
+  height: 38em;
 }
