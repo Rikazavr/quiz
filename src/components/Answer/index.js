@@ -17,7 +17,7 @@ const Answer = observer(() => {
   const [questionId, setId] = useState(0);
   const question = questions[questionId];
   const embedId = question.videoId;
-  const seconds = (type === 'image') ? 10000 : 20000;
+  const seconds = (type === 'image') ? 10000 : 15000;
 
   const goToNextQuestion = () => {
     if (questionId === questions.length - 1) {
