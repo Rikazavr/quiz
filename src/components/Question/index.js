@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { observer } from 'mobx-react';
 import { useStores } from '../../hooks';
+import Sound from 'react-sound';
 import Timer from '../Timer';
 import Audio from '../Audio';
 import gif from './images/001.gif';
@@ -51,7 +52,7 @@ const AudioQuestion = ({ id, url, next }) => {
         {`№ ${id + 1}`}
       </p>
       <div className="question__wrapper">
-        <Timer onFinish={next} key={id} time={35000} />
+        <Timer onFinish={next} key={id} time={33000} />
         <Audio url={url} />
 
         <img
@@ -81,6 +82,12 @@ const ImageQuestion = ({ id, url, next }) => {
           className="question__image"
         />
       </div>
+
+      <Sound
+        url="https://docs.google.com/uc?export=open&id=1L_K_pAL3DVK10l5OxFQN2MAENqYWLrAg"
+        playStatus={Sound.status.PLAYING}
+        volume={30}
+      />
     </div>
   )
 }
