@@ -52,7 +52,7 @@ const AudioQuestion = ({ id, url, next }) => {
         {`№ ${id + 1}`}
       </p>
       <div className="question__wrapper">
-        <Timer onFinish={next} key={id} time={33000} />
+        <Timer onFinish={next} key={id} time={35000} />
         <Audio url={url} />
 
         <img
@@ -84,9 +84,10 @@ const ImageQuestion = ({ id, url, next }) => {
       </div>
 
       <Sound
-        url="https://docs.google.com/uc?export=open&id=1L_K_pAL3DVK10l5OxFQN2MAENqYWLrAg"
+        url="https://docs.google.com/uc?export=open&id=1AveT-Gsk59H9fYaq-k9nWXvr1wMH1HSJ"
         playStatus={Sound.status.PLAYING}
-        volume={30}
+        volume={20}
+        loop={true}
       />
     </div>
   )
